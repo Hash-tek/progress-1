@@ -1,18 +1,30 @@
-print('WELCOME TO THE ROLLERCOSTER')
+from msilib.schema import PublishComponent
+from tkinter import Y
+
+
+print('WELCOME TO THE RO LLERCOSTER')
 height=int(input('what is your height? '))
+bill=0
 if height >120:
-    print('input your age') 
     age=int(input('what is your age? '))
     if age <= 18:
-       print('please pay $5 and enjoy the ride')
+        bill=5
+        print('aldolescent ticket are $5')
+    elif age <= 25:
+        bill=6
+        print ( 'youth ticket are $6 ')    
     else:
-       print(' please pay $7 and enjoy the ride')
-#print ('enjoy the ride')       
+        bill=7
+        print(' adult ticket are $7') 
+    photo=input('do you want a photo? Y/N')
+    if photo =='Y':
+      bill+=3
+    print(f'your bill is {bill}')
 else:
     sorry=int(input('your age?'))
     if sorry<= 10:
         print('have an ice cream')
     else:
-        print ("go home")
+         print ("go home")
     print('grow taller')
 print('BYE!!!')         
