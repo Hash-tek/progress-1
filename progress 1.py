@@ -1,8 +1,4 @@
-from msilib.schema import PublishComponent
-from tkinter import Y
-
-
-print('WELCOME TO THE RO LLERCOSTER')
+print('WELCOME TO THE ROLLERCOSTER')
 height=int(input('what is your height? '))
 bill=0
 if height >120:
